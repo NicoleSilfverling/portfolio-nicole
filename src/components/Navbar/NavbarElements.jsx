@@ -82,9 +82,10 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
     
 
-    &.active {
+    &.active, &:hover {
         border-bottom: 3px solid var(--colorTitle);
 
     }
+    
 `
 

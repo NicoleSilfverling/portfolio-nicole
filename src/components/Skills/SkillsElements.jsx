@@ -1,8 +1,12 @@
 import styled from 'styled-components'
+import PatternBg from '../../images/subtle-prism.svg'
+
 
 export const SkillsContainer = styled.div`
-    color: #fff;
-    background: var(--lightBg);
+    background-color: var(--lightBg);
+    background-image: url(${PatternBg});
+    /* background by SVGBackgrounds.com */
+    background-size: cover;
 
     @media screen and (max-width:768px) {
         padding: 100px 0;
