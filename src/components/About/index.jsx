@@ -12,8 +12,6 @@ import {
     Description,
     ImgWrap,
     Gif
-
-    
 } from './AboutElements'
 
 const About = () => {
@@ -32,7 +30,7 @@ const About = () => {
                             Stockholms Tekniska Institut.
                         </Description>
                         <Description>
-                            Har tidigare arbetat med TV-produktioner inom sport som 
+                            Tidigare har jag arbetat med TV-produktioner inom sport, som 
                             fotograf, redigerare och grafik-operatör.
                         </Description>
                         <Description>
