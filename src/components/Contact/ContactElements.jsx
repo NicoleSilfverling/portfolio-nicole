@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import {FaGithub, FaEnvelope, FaPhone} from 'react-icons/fa'
+import {FaGithub, FaEnvelope, FaPhone, FaLinkedin} from 'react-icons/fa'
 import PatternBg from '../../images/subtle-prism.svg'
+import { ExternalLink } from 'react-external-link'
 
 
 export const ContactContainer = styled.div`
@@ -41,14 +42,12 @@ export const InfoRow = styled.div`
     grid-template-areas: 'col1 col2';
 
     @media screen and (max-width:768px){
-        /* grid-template-areas: 'col1 col1' 'col2 col2'; */
         grid-template-areas: 'col1' 'col2';
     }
 `
 
 export const Coloumn1 = styled.div`
     margin-bottom: 15px;
-    /* padding: 0 100px; */
     grid-area: col1;
 `
 export const Coloumn2 = styled.div`
@@ -92,10 +91,7 @@ export const Description = styled.p`
     color: var(--darkText);
 `
 export const ImgWrap = styled.div`
-    max-width: 300px;
-    /* width: 100%; */
-    /* object-fit: contain; */
-
+    max-width: 400px;
 
 `
 
@@ -103,30 +99,49 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 100%;
     height: 100%;
-    /* -o-object-fit: cover;
-    object-fit: cover; */
 `
 
 
 export const ContactInfoWrapper = styled.div`
     display: flex;
-    margin: 10px 0;
+    align-items: center;
+    margin: 17px 0;
     max-width: fit-content;
+
+`
+
+export const StyledLink = styled(ExternalLink)`
+    color: var(--darkText);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
 `
 
 export const ContactP = styled.p`
-    color: #010606;
-    padding-left: 10px;
-   
+    color: var(--darkText);
+    font-size: 1.3rem;
+    margin-left: 15px;
 `
+
 
 export const GithubIcon = styled(FaGithub)`
     color: #333;
+    font-size: 1.7rem;
+    margin-right: 10px;
 `
 export const MailIcon = styled(FaEnvelope)`
     color: #333;
+    font-size: 1.4rem;
 `
 export const PhoneIcon = styled(FaPhone)`
     color: #333;
+    font-size: 1.4rem;
 `
+export const LinkedInIcon = styled(FaLinkedin)`
+    color: #333;
+    font-size: 1.7rem;
+    margin-right: 10px;
+
+`
+
 

@@ -40,7 +40,6 @@ export const InfoRow = styled.div`
     grid-template-areas: 'col2 col1';
 
     @media screen and (max-width:768px){
-        /* grid-template-areas: 'col1 col1' 'col2 col2'; */
         grid-template-areas: 'col1' 'col2';
     }
 `
@@ -92,17 +91,12 @@ export const Description = styled.p`
 `
 export const ImgWrap = styled.div`
     max-width: 400px;
-    /* max-width: 100px; */
-    /* object-fit: contain; */
-    /* -o-object-fit: contain; */
-    
 
-`
+    `
 
 
 export const Img = styled.img`
     width: 100%;
     height: 100%;
-    /* -o-object-fit: cover;
-    object-fit: cover; */
+
 `

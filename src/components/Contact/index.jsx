@@ -16,7 +16,9 @@ import {
     GithubIcon,
     PhoneIcon,
     MailIcon,
-    ContactInfoWrapper
+    ContactInfoWrapper,
+    LinkedInIcon,
+    StyledLink
     
 } from './ContactElements'
 
@@ -30,7 +32,7 @@ const Contact = () => {
                 <Coloumn1>
                     <TextWrapper>
                         <TopLine>Kontakt</TopLine>
-                        <Heading>Hör av dig!</Heading>
+                        <Heading>Kontakta mig!</Heading>
                         <ContactInfoWrapper>
                             <MailIcon/>
                             <ContactP>Nicole.silfverling@gmail.com</ContactP>
@@ -40,10 +42,11 @@ const Contact = () => {
                             <ContactP>073 - 642 07 06</ContactP>
                         </ContactInfoWrapper>
                         <ContactInfoWrapper>
-                            <GithubIcon/>
-                            <ContactP>Github</ContactP>
+                            <StyledLink href="https://www.linkedin.com/in/nicole-silfverling-34980b22b"><LinkedInIcon/>LinkedIn</StyledLink>
                         </ContactInfoWrapper>
-
+                        <ContactInfoWrapper>
+                            <StyledLink href="https://github.com/NicoleSilfverling"><GithubIcon/>Github</StyledLink>
+                        </ContactInfoWrapper>
                     </TextWrapper>
                 </Coloumn1>
                 <Coloumn2>

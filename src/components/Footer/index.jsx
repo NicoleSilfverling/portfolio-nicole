@@ -4,7 +4,7 @@ import {FooterContainer, FooterP} from './FooterElements'
 const Footer = () => {
   return (
     <FooterContainer>
-        <FooterP>Detta är en footer</FooterP>
+        <FooterP>© Copyright 2022 Nicole Silfverling Portfolio</FooterP>
     </FooterContainer>
   )
 }
