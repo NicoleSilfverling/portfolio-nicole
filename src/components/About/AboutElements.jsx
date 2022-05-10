@@ -36,7 +36,6 @@ export const InfoRow = styled.div`
     grid-template-areas: 'col1 col2';
 
     @media screen and (max-width:768px){
-        /* grid-template-areas: 'col1 col1' 'col2 col2'; */
         grid-template-areas: 'col1' 'col2';
     }
 `
@@ -87,10 +86,12 @@ export const Description = styled.p`
     color: var(--lightText);
 `
 export const ImgWrap = styled.div`
-    width: 100%;
+    /* width: 100%; */
     /* max-width: 100px; */
     object-fit: contain;
     /* -o-object-fit: contain; */
+    display: flex;
+    justify-content: center;
     
 
 `
@@ -106,4 +107,7 @@ export const Gif = styled.img`
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    
 `
+
+

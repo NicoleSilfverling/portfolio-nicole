@@ -6,6 +6,7 @@ import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import Dropdown from '../components/Dropdown'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,6 +17,7 @@ const Home = () => {
 
   return (
     <>
+      <Dropdown isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection/>
       <About/>
