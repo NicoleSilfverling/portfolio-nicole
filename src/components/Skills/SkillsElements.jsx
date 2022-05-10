@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const AboutContainer = styled.div`
+export const SkillsContainer = styled.div`
     color: #fff;
-    background: var(--darkBg);
+    background: var(--lightBg);
 
     @media screen and (max-width:768px) {
         padding: 100px 0;
@@ -20,20 +20,12 @@ export const InfoWrapper = styled.div`
     padding: 0 24px;
     justify-content: center;
 
-    @media screen and (max-width: 768px) {
-        height: 1100px;
-    }
-
-    @media screen and (max-width: 440px) {
-        height: 900px;
-    }
-
 `
 export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
-    grid-template-areas: 'col1 col2';
+    grid-template-areas: 'col2 col1';
 
     @media screen and (max-width:768px){
         /* grid-template-areas: 'col1 col1' 'col2 col2'; */
@@ -72,7 +64,7 @@ export const Heading = styled.h1`
     font-size: 40px;
     line-height: 1.1;
     font-weight: 500;
-    color: var(--lightText);;
+    color: var(--darkText);;
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -84,7 +76,7 @@ export const Description = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: var(--lightText);
+    color: var(--darkText);
 `
 export const ImgWrap = styled.div`
     width: 100%;
@@ -95,13 +87,8 @@ export const ImgWrap = styled.div`
 
 `
 
-export const theGif = styled.img`
-    /* width: fit-content; */
-    /* object-fit: contain; */
 
-`
-
-export const Gif = styled.img`
+export const Img = styled.img`
     width: 100%;
     height: 100%;
     -o-object-fit: cover;

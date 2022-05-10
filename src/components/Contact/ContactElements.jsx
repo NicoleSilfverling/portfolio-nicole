@@ -1,8 +1,10 @@
 import styled from 'styled-components'
+import {FaGithub, FaEnvelope, FaPhone} from 'react-icons/fa'
 
-export const AboutContainer = styled.div`
+
+export const ContactContainer = styled.div`
     color: #fff;
-    background: var(--darkBg);
+    background: var(--lightBg);
 
     @media screen and (max-width:768px) {
         padding: 100px 0;
@@ -19,15 +21,7 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
-
-    @media screen and (max-width: 768px) {
-        height: 1100px;
-    }
-
-    @media screen and (max-width: 440px) {
-        height: 900px;
-    }
-
+    
 `
 export const InfoRow = styled.div`
     display: grid;
@@ -43,12 +37,12 @@ export const InfoRow = styled.div`
 
 export const Coloumn1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 0 100px;
     grid-area: col1;
 `
 export const Coloumn2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 0 20px;
     grid-area: col2;
 `
 export const TextWrapper = styled.div`
@@ -72,7 +66,7 @@ export const Heading = styled.h1`
     font-size: 40px;
     line-height: 1.1;
     font-weight: 500;
-    color: var(--lightText);;
+    color: var(--darkText);;
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -84,7 +78,7 @@ export const Description = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: var(--lightText);
+    color: var(--darkText);
 `
 export const ImgWrap = styled.div`
     width: 100%;
@@ -95,15 +89,34 @@ export const ImgWrap = styled.div`
 
 `
 
-export const theGif = styled.img`
-    /* width: fit-content; */
-    /* object-fit: contain; */
 
-`
-
-export const Gif = styled.img`
+export const Img = styled.img`
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
 `
+
+
+export const ContactInfoWrapper = styled.div`
+    display: flex;
+    margin: 10px 0;
+    
+`
+
+export const ContactP = styled.p`
+    color: #010606;
+    padding-left: 10px;
+   
+`
+
+export const GithubIcon = styled(FaGithub)`
+    color: #333;
+`
+export const MailIcon = styled(FaEnvelope)`
+    color: #333;
+`
+export const PhoneIcon = styled(FaPhone)`
+    color: #333;
+`
+
