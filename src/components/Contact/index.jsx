@@ -32,16 +32,16 @@ const Contact = () => {
                         <TopLine>Kontakt</TopLine>
                         <Heading>Hör av dig!</Heading>
                         <ContactInfoWrapper>
-                        <MailIcon/>
-                        <ContactP>Nicole.silfverling@gmail.com</ContactP>
+                            <MailIcon/>
+                            <ContactP>Nicole.silfverling@gmail.com</ContactP>
                         </ContactInfoWrapper>
                         <ContactInfoWrapper>
-                        <PhoneIcon/>
-                        <ContactP>073 - 642 07 06</ContactP>
+                            <PhoneIcon/>
+                            <ContactP>073 - 642 07 06</ContactP>
                         </ContactInfoWrapper>
                         <ContactInfoWrapper>
-                        <GithubIcon/>
-                        <ContactP>Github</ContactP>
+                            <GithubIcon/>
+                            <ContactP>Github</ContactP>
                         </ContactInfoWrapper>
 
                     </TextWrapper>

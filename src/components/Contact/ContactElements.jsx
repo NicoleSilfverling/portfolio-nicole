@@ -21,6 +21,13 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        height: 600px;
+    }
+
+    @media screen and (max-width: 440px) {
+        height: 450px;
+    }
     
 `
 export const InfoRow = styled.div`
@@ -37,7 +44,7 @@ export const InfoRow = styled.div`
 
 export const Coloumn1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 100px;
+    /* padding: 0 100px; */
     grid-area: col1;
 `
 export const Coloumn2 = styled.div`
@@ -81,11 +88,10 @@ export const Description = styled.p`
     color: var(--darkText);
 `
 export const ImgWrap = styled.div`
-    width: 100%;
-    /* max-width: 100px; */
-    object-fit: contain;
-    /* -o-object-fit: contain; */
-    
+    max-width: 300px;
+    /* width: 100%; */
+    /* object-fit: contain; */
+
 
 `
 
@@ -93,15 +99,15 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    /* -o-object-fit: cover;
+    object-fit: cover; */
 `
 
 
 export const ContactInfoWrapper = styled.div`
     display: flex;
     margin: 10px 0;
-    
+    max-width: fit-content;
 `
 
 export const ContactP = styled.p`

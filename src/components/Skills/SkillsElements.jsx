@@ -20,6 +20,14 @@ export const InfoWrapper = styled.div`
     padding: 0 24px;
     justify-content: center;
 
+    @media screen and (max-width: 768px) {
+        height: 700px;
+    }
+
+    @media screen and (max-width: 440px) {
+        height: 600px;
+    }
+
 `
 export const InfoRow = styled.div`
     display: grid;
@@ -79,9 +87,9 @@ export const Description = styled.p`
     color: var(--darkText);
 `
 export const ImgWrap = styled.div`
-    width: 100%;
+    max-width: 400px;
     /* max-width: 100px; */
-    object-fit: contain;
+    /* object-fit: contain; */
     /* -o-object-fit: contain; */
     
 
@@ -91,6 +99,6 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    /* -o-object-fit: cover;
+    object-fit: cover; */
 `
