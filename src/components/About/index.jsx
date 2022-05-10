@@ -30,7 +30,7 @@ const About = () => {
                             Stockholms Tekniska Institut.
                         </Description>
                         <Description>
-                            Tidigare har jag arbetat med TV-produktioner inom sport, som 
+                            Innan jag började studera arbetade jag med sport TV-produktioner som 
                             fotograf, redigerare och grafik-operatör.
                         </Description>
                         <Description>
