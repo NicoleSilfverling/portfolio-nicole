@@ -1,63 +1,76 @@
-import styled from 'styled-components'
+import styled from 'styled-components' 
+import {FaHammer} from 'react-icons/fa'
+import { ExternalLink } from 'react-external-link'
 
 export const ProjectsContainer = styled.div`
     display: flex;
-    height: 800px;
+    height: 1200px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--darkBg);
+    padding: 0;
+    margin: 0;
 
-    @media screen and (max-width:1200px){
-        height: 1100px;
+    @media screen and (max-width:1300px){
+        height: 1400px;
     }
-    @media screen and (max-width:768px){
-        height: 1500px;
+
+    @media screen and (max-width: 680px){
+        height: 2600px;
     }
+  
 `
 
 export const ProjectsWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    grid-gap: 30px;
+    grid-gap: 40px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1200px){
-        grid-template-columns: 1fr 1fr;
-    }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1300px){
         grid-template-columns: 1fr;
-        padding: 0 20px;
+        padding: 0;
     }
 
+
+`
+export const ProjectsCardWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    background: var(--lightBg);
+    border-radius: 5px;
+
+    @media screen and (max-width: 680px){
+        flex-direction: column;
+    }
 `
 
 export const ProjectsCard = styled.div`
-    background: #fff;
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 10px;
-    height: 380px;
-    width: 320px;
+    position: relative;
+    height: 390px;
+    width: 250px;
     padding: 30px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    transition: all 0.2s ease-in-out;
 
-    &:hover{
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
-    }
+
+`
+
+export const ProjectsIcon = styled.img`
+    height: 390px;
+    width: auto;
 `
 
 export const ProjectsH1 = styled.h1`
     font-size: 2.5rem;
-    color: #fff;
+    color: var(--lightText);
     margin-bottom: 64px;
 
     @media screen and(max-width:480px){
@@ -66,24 +79,51 @@ export const ProjectsH1 = styled.h1`
 `
 
 export const ProjectsH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+    color: var(--darkText);
 `
 
 export const ProjectsP = styled.p`
-    font-size: 1rem;
-    text-align: center;
-`
-export const ProjectsTagBox = styled.div`
-    display: flex;
-    flex-direction: row;
-    /* justify-content: flex-start; */
-    align-items: center;
-    margin-top: 8px;
-    position: relative;
-    bottom: -4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: left;
+    color: var(--darkText);
+    margin-bottom: 1rem;
 
 `
+
+export const BtnWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 1.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+`
+
+export const LinkBtn = styled(ExternalLink)`
+    width: 90px;
+    height: 40px;
+    border: 3px solid var(--colorTitle);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--colorTitle);
+    background-color: transparent;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    &:hover{
+        background-color: var(--colorTitle);
+        color: var(--lightText);
+    }
+`
+
 
 export const ProjectsTag = styled.div`
     background-color: #e1e2e3;
@@ -96,16 +136,8 @@ export const ProjectsTag = styled.div`
     align-items: center;
 `
 
-export const ProjectsIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-bottom: 10px;
-`
 
-export const VideoBg = styled.video`
-    width: auto;
-    height: 160px;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: #232a34;
+export const Hammer = styled(FaHammer)`
+    color: var(--darkText);
+    margin-right: 10px;
 `

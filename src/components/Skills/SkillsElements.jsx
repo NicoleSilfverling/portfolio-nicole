@@ -29,7 +29,7 @@ export const InfoWrapper = styled.div`
     }
 
     @media screen and (max-width: 440px) {
-        height: 600px;
+        height: 750px;
     }
 
 `
@@ -53,11 +53,35 @@ export const Coloumn2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
 `
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+`
+
+export const SkillTagWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1.1rem;
+    flex-wrap: wrap;
+    width: 80%;
+`
+
+export const SkillTag = styled.div`
+    background-color: #e1e2e3;
+    color: #222;
+    border-radius: 5px;
+    padding:10px 15px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
 `
 
 export const TopLine = styled.p`
@@ -84,7 +108,7 @@ export const Heading = styled.h1`
 
 export const Description = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     font-size: 18px;
     line-height: 24px;
     color: var(--darkText);
@@ -100,3 +124,5 @@ export const Img = styled.img`
     height: 100%;
 
 `
+
+

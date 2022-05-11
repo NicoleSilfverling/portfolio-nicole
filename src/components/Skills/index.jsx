@@ -11,7 +11,9 @@ import {
     Heading,
     Description,
     ImgWrap,
-    Img
+    Img,
+    SkillTagWrapper,
+    SkillTag
     
 } from './SkillsElements'
 
@@ -29,9 +31,19 @@ const Skills = () => {
                         <Description>
                             Efter två terminer så har jag grundläggande förståelse inom följande:
                         </Description>
-                        <Description>
+                        <SkillTagWrapper>
+                            <SkillTag>Java</SkillTag>
+                            <SkillTag>JavaScript</SkillTag>
+                            <SkillTag>React</SkillTag>
+                            <SkillTag>HTML</SkillTag>
+                            <SkillTag>CSS</SkillTag>
+                            <SkillTag>SQL</SkillTag>
+                            <SkillTag>TDD</SkillTag>
+                            <SkillTag>Agile</SkillTag>
+                        </SkillTagWrapper>
+                        {/* <Description>
                              Java, Javascript, React, HTML, CSS, SQL, TDD, Agile
-                        </Description>
+                        </Description> */}
                     </TextWrapper>
                 </Coloumn1>
                 <Coloumn2>

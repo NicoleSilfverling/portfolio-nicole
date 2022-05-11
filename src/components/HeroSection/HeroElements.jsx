@@ -80,11 +80,11 @@ export const BtnWrapper= styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
+    gap: 2rem;
 `
 
 export const Btn = styled(Link)`
-    margin-right: 2rem;
     padding: 10px 20px;
     background: transparent;
     color: #fff;

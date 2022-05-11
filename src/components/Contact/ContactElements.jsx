@@ -115,12 +115,20 @@ export const StyledLink = styled(ExternalLink)`
     font-size: 1.3rem;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 400px) {
+        font-size: 1rem;
+    }
 `
 
 export const ContactP = styled.p`
     color: var(--darkText);
     font-size: 1.3rem;
     margin-left: 15px;
+
+    @media screen and (max-width: 400px) {
+        font-size: 1rem;
+    }
 `
 
 
@@ -128,20 +136,35 @@ export const GithubIcon = styled(FaGithub)`
     color: #333;
     font-size: 1.7rem;
     margin-right: 10px;
+
+    @media screen and (max-width: 400px) {
+        font-size: 1.5rem;
+    }
 `
 export const MailIcon = styled(FaEnvelope)`
     color: #333;
     font-size: 1.4rem;
+
+    @media screen and (max-width: 400px) {
+        font-size: 1.2rem;
+    }
 `
 export const PhoneIcon = styled(FaPhone)`
     color: #333;
     font-size: 1.4rem;
+
+    @media screen and (max-width: 400px) {
+        font-size: 1.2rem;
+    }
 `
 export const LinkedInIcon = styled(FaLinkedin)`
     color: #333;
     font-size: 1.7rem;
     margin-right: 10px;
 
+    @media screen and (max-width: 400px) {
+        font-size: 1.5rem;
+    }
 `
 
 
