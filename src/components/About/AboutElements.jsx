@@ -86,21 +86,13 @@ export const Description = styled.p`
     color: var(--lightText);
 `
 export const ImgWrap = styled.div`
-    /* width: 100%; */
-    /* max-width: 100px; */
     object-fit: contain;
-    /* -o-object-fit: contain; */
     display: flex;
     justify-content: center;
     
 
 `
 
-export const theGif = styled.img`
-    /* width: fit-content; */
-    /* object-fit: contain; */
-
-`
 
 export const Gif = styled.img`
     width: 100%;

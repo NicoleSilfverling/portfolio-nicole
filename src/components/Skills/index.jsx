@@ -41,9 +41,6 @@ const Skills = () => {
                             <SkillTag>TDD</SkillTag>
                             <SkillTag>Agile</SkillTag>
                         </SkillTagWrapper>
-                        {/* <Description>
-                             Java, Javascript, React, HTML, CSS, SQL, TDD, Agile
-                        </Description> */}
                     </TextWrapper>
                 </Coloumn1>
                 <Coloumn2>

@@ -40,7 +40,6 @@ const About = () => {
                 </Coloumn1>
                 <Coloumn2>
                     <ImgWrap>
-                        
                      <Gif src={Fotboll}/>
                     </ImgWrap>
                 </Coloumn2>
