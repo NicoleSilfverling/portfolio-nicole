@@ -26,7 +26,8 @@ const Projects = () => {
                 <ProjectsIcon src={Icon1}/>
                 <ProjectsCard>
                     <ProjectsH2>Portfolio</ProjectsH2>
-                    <ProjectsP>Portfolio hemsida skapat med react</ProjectsP>
+                    <ProjectsP>Hemsida för en kort beskrivning om mig.</ProjectsP>
+                    <ProjectsP>Har använt mig av React och har fokuserat på att göra sidan responsiv.</ProjectsP>
                     <BtnWrapper>
                         <LinkBtn href="https://github.com/NicoleSilfverling/portfolio-nicole">Code</LinkBtn>
                         <LinkBtn href="https://nicoles-portfolio.netlify.app">Site</LinkBtn>
@@ -37,7 +38,7 @@ const Projects = () => {
                 <ProjectsIcon src={Icon2}/>
                 <ProjectsCard>
                     <ProjectsH2> Breakout kopia</ProjectsH2>
-                    <ProjectsP>Återskapat det klassiska spelet Breakout med Javascript och HTML Canvas.</ProjectsP>
+                    <ProjectsP>Återskapat det klassiska spelet Breakout med JavaScript och HTML Canvas.</ProjectsP>
                     <BtnWrapper>
                         <LinkBtn href="https://github.com/NicoleSilfverling/sti-frontend">Code</LinkBtn>
                         <LinkBtn href="https://nicole-frontend.herokuapp.com/">Site</LinkBtn>
