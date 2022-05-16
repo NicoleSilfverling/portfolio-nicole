@@ -89,6 +89,7 @@ export const ImgWrap = styled.div`
     object-fit: contain;
     display: flex;
     justify-content: center;
+    cursor: pointer;
     
 
 `
