@@ -18,7 +18,7 @@ const HeroSection = () => {
         </HeroBg>
         <HeroContent>
             <HeroH1>Nicole Silfverling</HeroH1>
-            <HeroP>Studerar till Java- och Javascript-utvecklare</HeroP>
+            <HeroP>Studerar till Java och JavaScript-utvecklare</HeroP>
             <BtnWrapper>
               <Btn 
                 to="about"

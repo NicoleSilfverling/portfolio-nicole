@@ -1,5 +1,7 @@
 import React from 'react'
+import { useState } from 'react'
 import Fotboll from '../../images/TVFotboll.gif'
+import Hockey from '../../images/TVHockey.gif'
 import {    
     AboutContainer,
     InfoWrapper,
@@ -15,6 +17,14 @@ import {
 } from './AboutElements'
 
 const About = () => {
+
+    const [state, setState] = useState(false);
+    const [gif, setGif] = useState(Fotboll)
+
+    const toggle = () => {
+        setState(!state);
+        setGif(!state ? Hockey : Fotboll);
+    }
 
   return (
     <>
@@ -39,8 +49,8 @@ const About = () => {
                     </TextWrapper>
                 </Coloumn1>
                 <Coloumn2>
-                    <ImgWrap>
-                     <Gif src={Fotboll}/>
+                    <ImgWrap onClick={toggle}>
+                     <Gif src={gif}/>
                     </ImgWrap>
                 </Coloumn2>
             </InfoRow>
